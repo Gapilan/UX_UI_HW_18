@@ -21,10 +21,34 @@ ul {
     margin-left: auto;
 }
 
+.heroimg {
+    height: 600px;
+    padding: 25px;
+    background-color:#F8B133;
+}
+
+.content {
+    width: 500px;
+    margin: 0%;
+}
 
 footer {
     background-color:#F8B133;
     margin-top: 250px;
+}
+
+.portrait {
+    height: 45%;
+    float: left;
+}
+
+.portrait-text {
+    width: 55%;
+    float: right;
+    color: white;
+    font-family: lato;
+    margin-top: 10%;
+    font-size: 18px;
 }
 
 .nav-menu {
@@ -46,6 +70,17 @@ footer {
     color: white;
 }
 
+button {
+    background-color: #337AF8;
+    color: white;
+    font-family: lato;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 15%;
+    height: 50px;
+    font-size: 15px;
+}
+
 .card {
     width: 30%;
     margin: 0%; 
@@ -53,7 +88,7 @@ footer {
     float: left;
     background-color: #337AF8;
     margin: 20px;
-    height: 120px;
+    height: 200px;
     border-radius: 15px;
   }
 
@@ -62,9 +97,74 @@ footer {
 }
 
 .cards {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     font-size: 15px;
     margin-top: 50px;
+}
 
+.flexContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 33%;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: row;
+}
+
+.skillsImage {
+    height: 450px;
+    padding: 20px;
+}
+
+.mySkills {
+    padding: 100px;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    margin-top: auto;
+    justify-content: center;
+}
+
+.myWork {
+    padding: 100px;
+    text-align: center;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: auto auto auto;
+}
+
+.projectImage1 {
+    width: 500px;
+    padding-top: 50px;
+}  
+
+.projectImage2 {
+    width: 500px;
+    padding-top: 50px;
+}
+
+.projectImage3 {
+    width: 500px;
+    padding-bottom: 45px;
+    padding-top: 50px;
+}
+
+.myWorkbutton {
+    width: 300px;
+}
+
+@media only screen and {max-width: 600;} {
+    .flexContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: auto auto auto;
+    }
 }
